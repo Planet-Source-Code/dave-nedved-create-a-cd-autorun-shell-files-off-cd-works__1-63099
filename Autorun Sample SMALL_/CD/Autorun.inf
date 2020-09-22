@@ -1,0 +1,18 @@
+Rem // This code is the form of a Simple Autorun.
+Rem // I have included some more lines to show a more
+Rem // Advanced form of an Autorun.
+
+[autorun]
+open = Autorun.exe
+icon = Autorun.exe
+
+Rem // Below are the more advanced Autorun Code.
+Rem // They will not work as there is no Setup.exe
+Rem // Add a Setup.exe and a setup2.exe to the '\Setup' Dir
+rem // And those menus wil show when you Right Click the CD in My Computer
+
+shell\Setup\Command = Setup\Setup.exe
+shell\Setup = &Install Autorun Sample
+
+shell\Setup2\Command = Setup\Setup2.exe
+shell\Setup2 = &Install Autorun Sample2
